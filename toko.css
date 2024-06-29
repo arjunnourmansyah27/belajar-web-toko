@@ -1,0 +1,516 @@
+/* Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* variabel */
+:root{
+    --header-height:3rem;
+    --ukuran-tinggi:4rem; 
+
+    /* font weight */
+    --font-medium: 300;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* warna */
+    --dark-color:#407D8A;
+    --dark-color-light:#8A8A8A;
+    --dark-color-lighten:#E2E2E2;
+    --white-color:#fff;
+
+    /* huruf dan tipografi */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size:2.25rem;
+    --bigger-font-size:1.5rem;
+    --biggest-font-size:2rem;
+    --h2-font-size:1.25rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+
+    /* margin */
+    --mb-1:.5rem;
+    --mb-2:1rem;
+    --mb-3:1.5rem;
+    --mb-4:2rem;
+    --mb-5:2.5rem;
+    --mb-6:3rem;
+
+    /* z index */
+    --z-fixed:100;
+    --z-tolltip:10;
+
+    /* rotate img  */
+    /* --rotate-img: rotate(20deg); */
+    --rotate-img: rotate(-30deg);
+}
+@media screen and (min-widht:768px) {
+    :root {
+        --big-font-size:1.5rem;
+        --bigger-font-size:2rem;
+        --biggest-font-size:4rem;
+        --normal-font-size:1rem;
+        --smaller-font-size:.875rem;
+    }
+}
+/* base */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height)0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--dark-color);
+    /* warna Morning Mist */
+    background-color: #EDF3F5;
+    line-height: 1.6;
+}
+
+h1,h2.h3,p,ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* class css-nya */
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section-title{
+    position: relative;
+    font-size: 25px;
+    margin-bottom: var(--mb-4);
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.section-subtitle{
+    display: block;
+    color: var(--dark-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.section-title::after{
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: .18rem;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--dark-color);
+}
+
+/* layout */
+.bd-container{
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 6rem;
+    width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #E2E2E2;
+}
+
+/* nav */
+.nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+        position: fixed;
+        top: var(--header-height);
+        left: -90%;
+        width: 38%;
+        height: 100vh;
+        padding: 2rem;
+        background-color: #75abb7;
+        transition: .5s;
+    }
+}
+
+.nav__item{
+    margin-bottom: var(--mb-4); 
+}
+
+.nav__logo{
+    font-weight: var(--font-semi-bold);
+    font-size: 1.2rem;
+} 
+
+.nav__toggle, .nav__shop{
+    font-size: 1.3rem;
+    cursor: pointer; 
+}
+
+/* show menu */
+.show{
+    left: 0;
+}
+
+/* link aktif */
+.active{
+    position: relative;
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    bottom: -.5rem; 
+    left: 45%;
+    width: 4px;
+    height: 4px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+}
+
+/* --- HOME --- */
+.home__container{
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+}
+.home__data{
+    margin-top: -11rem;
+}
+.seri_home{
+    font-size: var(--biggest-font-size);
+    color: var(--dark-color);
+    margin-bottom: var(--mb-1);
+}
+
+.home__subtitle{
+    font-size: var(--font-medium);
+    color: var(--dark-color);
+    margin-bottom: var(--mb-4);
+}
+
+.gambar_home{
+    width: 400px;
+    justify-self: center;
+}
+/* --- Button --- */
+.button{
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: #7ac8d9;
+}
+
+/* slideshownya */
+* {box-sizing: border-box;}
+
+/* slide container */
+.slideshow-container{
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+/* hide gambar  default */
+.mySlides{
+    display: none;
+}
+/* next tomb0l */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 59%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* posisi tombol next*/
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover */
+.prev:hover, .next:hover{
+    background-color: #7ac8d9;
+    color: #fff;
+}
+
+/* bulet/indikator */
+.dots{
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #7ac8d9;
+    border-radius: 50%;
+    display: inline-block;
+    transform: background-color 0.6s ease;
+}
+
+.dots:hover{
+    background-color: #9bd8e6;
+}
+
+/* fadding animation */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/* bagian about us BackSide baru */
+.about__data{
+    text-align: center;
+}
+
+.section-subtitle{
+    font-size: 35px;
+    text-align: center;
+}
+
+.about__description{
+    margin-bottom: var(--mb-3);
+}
+
+.about__img{
+    width: 280px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+/* detail dari produk  */
+.services__container{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content{
+    text-align: center;
+}
+
+.kualitas_img{
+    width: 500px;
+    border-radius: .6rem;
+    margin-bottom: var(--mb-3);
+    justify-self: center;
+}
+
+.services__title{
+    font-size: 1rem;
+    color: #0d6470;
+    margin-bottom: var(--mb-1);
+} 
+.services__description{
+    padding: 0 1.5rem;
+}
+
+/* produk */
+.products__container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+del{
+    color: #8A8A8A;
+}
+
+.buat_konten{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(3,74,40,.15);
+    padding: .75rem .75rem 3rem .75rem;
+}
+
+.products__container:hover{
+    background-color: rgba(219, 219, 219, 0.321);
+    transition: .3s;
+}
+
+.products__wanita{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 7rem;
+}
+.products__img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 5px 2px rgba(80,79,79, .2));
+    align-self: center;
+    margin-bottom: var(--mb-2);
+}
+.nama_produk, .harga_produk{
+    font-weight: 600;
+    color: #407D8A;
+}
+.nama_produk{
+    font-size: .938rem;
+}
+.detail_produk, .harga_produk{
+    font-size: .813rem;
+}
+
+.harga_produk{
+    margin-bottom: var(--mb-4);
+    color: #407D8A;
+}
+.detail_produk{
+    margin-bottom: var(--mb-1);
+}
+.products__button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+}
+.products__button_detail{
+    font-size: .55rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: 0 .5rem 0 .5rem;
+}
+
+/* --- SLICK CSS untuk slider produk--- */
+.slick_two{
+    width: 90%;
+    margin: auto;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+hr{
+    color: #7ac8d9;
+    margin-bottom: 2rem;
+    margin-left: .6rem;
+    margin-top: 16rem;
+}
+
+/* contact 
+.contact__container{
+    text-align: center;
+}
+.contact__description{
+    margin-bottom: var(--mb-3);
+}
+.contact{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+} */
+
+.footer__copy{
+    text-align: center;
+    
+}
+.lokalpride{
+    width: 80px;
+}
+/* media queries */
+@media screen and (min-width:576px) {
+    .collection__container{
+        grid-template-columns: 415px;
+    }
+    .collection__img{
+        width: 60px;
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 7rem 0;
+    }
+
+    .section-title::after{
+        width: 768px;
+    }
+
+    .nav{
+        height: 3rem;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__item{
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+    .nav__toggle{
+        display: none;
+    }
+
+}

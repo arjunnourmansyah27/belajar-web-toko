@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackSide.id</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="toko.css">
+
+    <!-- slick css slider produk -->
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+            
+            <a href="#" class="nav__logo">BackSide®</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#quality" class="nav__link">Quality</a></li>
+                    <li class="nav__item"><a href="#produk" class="nav__link">Produk</a></li>
+                    <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                </ul>
+            </div>
+
+            <div class="nav__shop">
+                <i class='bx bx-shopping-bag' ></i>
+            </div>
+        </nav>
+    </header>
+        <!-- HOME / Produk sepatu-->
+        <section class="home" id="home">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h2 class="seri_home">Compass Gazelle Low Brebes</h2>
+                            <h3 class="home__subtitle">Produk Lokal Kebanggaan Anak Bangsa</h3>
+                            <a href="#" class="button">Checkout Now</a>
+                        </div>
+                        <img src="compas.png" alt="backside.img" class="gambar_home">
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h2 class="seri_home">Public Gum Low Series</h2>
+                            <h3 class="home__subtitle">Memberi Kenyamanan di Setiap Langkah</h3>
+                            <a href="#" class="button">Checkout Now</a>
+                        </div>
+                        <img src="whitegum.png" alt="backside.img" class="gambar_home">
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h2 class="seri_home">ThunderBear Slip On Black</h2>
+                            <h3 class="home__subtitle">Menemani setiap langkah mu</h3>
+                            <a href="#" class="button">Checkout Now</a>
+                        </div>
+                        <img src="alas.png" alt="backside.img" class="gambar_home">
+                    </div>
+                </div> 
+
+            </div>
+            <br>
+        </section>
+        <!-- Slide Show Next Button -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- lingkaran slide produk -->
+        <div style="text-align: center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- about -->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About Us</span>
+                    <h4 class="section-title about__initial">We Sell The Best Local Products</h4>
+                    <p class="about__description">BackSide® Apparel mulai di perkenalkan pada tahun 2022 oleh Arjun Nr dan 8 orang temannya, beroperasi sejak tahun 2022 di Store pertama nya yang berlokasi di Cipayung Raya, Jakarta Timur.</p>
+                    <a href="#" class="button">Jelajahi Histori</a>
+                </div>
+
+                <img src="store.jpg" alt="Store BackSide" class="about__img">
+            </div>
+        </section>
+
+        <!-- kualitas material produk  -->
+        <section class="services section bd-container" id="quality">
+            <span class="section-subtitle">Quality</span>
+            <h4 class="section-title">Our amazing services</h4>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <img src="img_qualitas.jpg" alt="kualitas produk" class="kualitas_img">
+                    <h3 class="services__title">Sage Cotton 24's </h3>
+                    <p class="services__description">Menggunakan material Cotton 24's berkualitas baik, cukup lembut di kulit sehingga cocok untuk digunakan sehari-hari.</p>
+                </div>
+
+                <div class="services__content">
+                    <img src="img_2.jpg" alt="kualitas produk" class="kualitas_img">
+                    <h3 class="services__title">Upper Canvas 12oz</h3>
+                    <p class="services__description">Menggunakan material canvas 12oz berkualitas baik, cukup lembut, dan memiliki daya tahan yang kuat sehingga cocok untuk digunakan sehari-hari.</p>
+                </div>
+
+                <div class="services__content">
+                    <img src="img_3.jpg" alt="kualitas produk" class="kualitas_img">
+                    <h3 class="services__title">Katun Twill Stretch</h3>
+                    <p class="services__description">Menggunakan material Katun berkualitas baik, cutting slimfit cocok untuk digunakan casual sehari-hari.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUK PRIA FLASH SALE 6.6 -->
+        <section class="product section bd-container" id="produk">
+            <span class="section-subtitle">Produk</span>
+            <h2 class="section-title">Promo 6.6 Mega Sale 🔥</h2>
+
+            <div class="products__container bd-grid logo-slider slick_two">
+                <div class="buat_konten">
+                    <img src="kaos1.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">House Of Smith</h3>
+                    <span class="detail_produk">T-shirt Field Sage</span><br>
+                    <span class="harga_produk">Rp 84.000</span><br>
+                    <a href="#" class="button products__button_detail">Detail Produk</a>
+                    <a href="#" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="bajunew.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Inefable</h3>
+                    <span class="detail_produk">T-shirt Lilac Sad</span><br>
+                    <span class="harga_produk">Rp 75.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+                
+                <div class="buat_konten">
+                    <img src="jakettt.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Trondheim</h3>
+                    <span class="detail_produk">Jaket Jeans Black</span><br>
+                    <span class="harga_produk">Rp 144.999</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="kemejapth.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Screamous</h3>
+                    <span class="detail_produk">Shortsleeve White</span><br>
+                    <span class="harga_produk">Rp 130.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="su1.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">House Of Smith</h3>
+                    <span class="detail_produk">Scream Yellow</span><br>
+                    <span class="harga_produk">Rp 84.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="zipper.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Russ</h3>
+                    <span class="detail_produk">Jacket Zipper Grey</span><br>
+                    <span class="harga_produk">Rp 249.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="asu2.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Cotton Goods</h3>
+                    <span class="detail_produk">Kemeja Pendek Navy</span><br>
+                    <span class="harga_produk">Rp 99.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="celana1.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Qwertylife</h3>
+                    <span class="detail_produk">Long Pants Cargo</span><br>
+                    <span class="harga_produk">Rp 99.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="celana2.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Hooligans</h3>
+                    <span class="detail_produk">Long Chino Fabio 21.3 Army</span><br>
+                    <span class="harga_produk">Rp 99.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="arjn.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Melo</h3>
+                    <span class="detail_produk">Casual Shirt Circles Black</span><br>
+                    <span class="harga_produk"><del>Rp 195.000</del> Rp 95.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="aero.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Aero Street</h3>
+                    <span class="detail_produk">Massive Low </span><br>
+                    <span class="harga_produk"><del>Rp 360.000</del> Rp 119.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="arjn1.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Screamous</h3>
+                    <span class="detail_produk">Stripe Bell Red</span><br>
+                    <span class="harga_produk"><del>Rp 195.000</del> Rp 95.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="patrobas.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Patrobas</h3>
+                    <span class="detail_produk">Cloud Slip On BW</span><br>
+                    <span class="harga_produk"><del>Rp 495.000</del> Rp 289.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+            
+            <br>
+            <!-- ===================================== PRODUK WANITA ======================================= -->
+            <h2 class="products__wanita">Fashion Wanita</h2>
+            <h2 class="section-title">Promo 6.6 Mega Sale 🔥</h2>
+
+            <div class="products__container bd-grid logo-slider slick_two">
+                <div class="buat_konten">
+                    <img src="spatucw.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Lurad</h3>
+                    <span class="detail_produk">Slip-On Kanvas Beige</span><br>
+                    <span class="harga_produk">Rp 159.000</span><br>
+                    <a href="#" class="button products__button_detail">Detail Produk</a>
+                    <a href="#" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="tas.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Berrybenka</h3>
+                    <span class="detail_produk">Sling Bag Sophie Pricilia</span><br>
+                    <span class="harga_produk"><del>Rp 189.000</del> Rp 159.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+                
+                <div class="buat_konten">
+                    <img src="hijab.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Jiniso</h3>
+                    <span class="detail_produk">Hijab Pashmina Aura Dusty Cream </span><br>
+                    <span class="harga_produk">Rp 41.500 - Rp 59.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="hoodie.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Giyomi.id</h3>
+                    <span class="detail_produk">Luna Blush Sweater</span><br>
+                    <span class="harga_produk"><del>Rp 145.000</del> Rp 120.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="blouse.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Sorabel</h3>
+                    <span class="detail_produk">Hyorena Plain V-neck Women Blouse</span><br>
+                    <span class="harga_produk"><del>Rp 112.000</del> Rp 84.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="jaketcw.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Orimoza</h3>
+                    <span class="detail_produk">Vintage Baggy Jaket Jeans Oversize</span><br>
+                    <span class="harga_produk"><del>Rp 130.000</del> Rp 105.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="coach.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Berrybenka Street </h3>
+                    <span class="detail_produk">Jacket Coach Over The Rainbow</span><br>
+                    <span class="harga_produk"><del>Rp 329.000</del> Rp 159.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="ciwi.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">VALORA</h3>
+                    <span class="detail_produk">Snow Acid OUTERY JACKET</span><br>
+                    <span class="harga_produk"><del>Rp 329.000</del> Rp 177.500</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="jeanscw.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Nuber</h3>
+                    <span class="detail_produk">Celana Jeans Boyfriend Blue Cream</span><br>
+                    <span class="harga_produk"><del>Rp 360.000</del> Rp 133.200 - Rp 160.000</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="arjn.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Cotton Goods</h3>
+                    <span class="detail_produk">Kemeja Pendek Navy</span><br>
+                    <span class="harga_produk">Rp. 99.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+
+                <div class="buat_konten">
+                    <img src="aero.png" alt="produk" class="products__img">
+                    <h3 class="nama_produk">Cotton Goods</h3>
+                    <span class="detail_produk">Kemeja Pendek Navy</span><br>
+                    <span class="harga_produk">Rp. 99.900</span>
+                    <a href="" class="button products__button_detail">Detail Produk</a>
+                    <a href="" class="button products__button"><i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+
+            <!-- K0NT4K /contact -->
+            <!-- <section class="contact section bd-container" id="contact">
+                <span class="section-subtitle contack__initia">Contact Us</span>
+                <h2 class="section-title contact__initial">Let's Talk</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <p class="contact__description">Jika kamu ingin membeli baju bbb di toko kami, hubungi kami dan kami akan segera melayani kamu dengan layanan 24 jam </p>
+                    </div>
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact Us Now </a>
+                    </div>
+                </div>
+            </section> -->
+
+    </main>
+    
+
+    <!-- footer  -->
+    <footer class="footer section>    
+        <div class="footer__container bd-grid">
+            <div class="footer_konten">
+                <hr><a href="#home" class="footer__logo"><h2>BackSide®</h2></a>
+                <p class="footer_deskripsi">New Collection Apparel BackSide 2022.</p>
+            </div>
+            <img src="lokalpride.png" alt="" class="lokalpride"><br>
+            <div>
+                <a href="https://web.facebook.com/" class="footer_sosmed"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com" class="footer_sosmed"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com " class="footer_sosmed"><i class='bx bxl-twitter'></i></a><br>
+            </div>
+            <div class="footer__konten">
+                <h3 class="footer_title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Retur Barang</a></li>
+                    <li><a href="#" class="footer-link">Membership</a></li>
+                    <li><a href="#" class="footer-link">Event</a></li>
+                    <li><a href="#" class="footer-link">Info Collab</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__konten">
+                <h3 class="footer_title">Alamat</h3>
+                <ul>
+                    <li>Jl. Cipayung Raya No.6, RT.5/RW.1</li>
+                    <li>Kota Jakarta Timur, 13840</li>
+                    <li>Telpon : +62 21338804</li>
+                    <li>Whatsapp : 085221665566</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p class="footer__copy">&#169; 2022 BackSide. All Rights Reserved.</p>
+    </footer>
+    <!-- javascriptnya -->
+    <script src="toko.js"></script>
+
+    <!-- JS SLICK -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="slick.min.js"></script>
+
+    <script>
+        $('.slick_two').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            speed: 900,
+            autoplaySpeed: 2000,
+            Infinite: true
+        });
+    </script>
+
+
+</body>
+</html>
+
